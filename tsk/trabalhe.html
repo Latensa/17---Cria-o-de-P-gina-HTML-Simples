@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhe Conosco - Amazon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo {
+            width: 90px;
+            height: 40px;
+            object-position: left;
+        }
+
+        header {
+            background-color: #232F3E;
+            padding: 20px 0px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 20px 30px;
+            font-family: Arial, sans-serif;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            padding-left: 560px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: color 0.1s;
+        }
+
+        nav ul li a:hover {
+            color: lightgrey;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="file"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #3A4553;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 4px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .btn:hover {
+            background-color: #e68a00;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #3A4553;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="Menu-Navegacao">
+        <header>
+            <img class="logo" src="img/Amazon-Logo.png" alt="receba a porra da logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="index.html">Institucional</a></li>
+                    <li><a href="index.html">Áreas de Atuação</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="trabalhe.html">Trabalhe Conosco</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+<div class="container">
+    <h2>Trabalhe Conosco</h2>
+    <p>A Amazon está sempre à procura de pessoas talentosas, motivadas e inovadoras para se juntar à nossa equipe. Aqui, você encontrará oportunidades em diversas áreas, desde tecnologia até atendimento ao cliente, logística e muito mais.</p>
+    
+    <p>Oferecemos um ambiente dinâmico e colaborativo, onde o desenvolvimento profissional e o equilíbrio entre vida pessoal e trabalho são priorizados. Se você está interessado em fazer parte de uma das maiores empresas de tecnologia do mundo, envie seu currículo abaixo e conte-nos mais sobre você!</p>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="area">Área de Interesse</label>
+            <input type="text" id="area" name="area" required>
+        </div>
+        <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Conte-nos um pouco mais sobre você e suas experiências" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="curriculo">Anexe seu Currículo</label>
+            <input type="file" id="curriculo" name="curriculo" accept=".pdf,.doc,.docx" required>
+        </div>
+        <button type="submit" class="btn">Enviar Candidatura</button>
+    </form>
+</div>
+
+</body>
+</html>
